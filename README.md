@@ -42,6 +42,13 @@
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
+5. **Extra Notes to Future Self**
+  - Netlify does not play nicely with Gatsby's usage of Node.js v18, so I included a .nvmrc file which states which Node.js version the project is using with this command. 
+  
+  ```shell
+  node -v > .nvmrc
+  ```
+
 ## 🚀 Quick start (Netlify)
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
