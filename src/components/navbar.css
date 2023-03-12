@@ -1,0 +1,80 @@
+@media (max-width: 1104px) {
+    .navbar-links {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100vh;
+      position: fixed;
+      top: 96px;
+      left: -100%;
+      width: 100%;
+      transition: all 0.5s ease;
+      background-color: #09121F;
+    }
+
+    .navbar-links li {
+      opacity: 0;
+    }
+  
+    .navbar-links.active {
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .navbar-links li {
+      width: 100%;
+      margin: 1rem 0;
+      text-align: center;
+      opacity: 1;
+    }
+  
+    .navbar-links a {
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.5s ease;
+    }
+  
+    .navbar-links a:hover {
+      color: #e9e9e9;
+    }
+  
+    .navbar-icon {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 1rem;
+      cursor: pointer;
+      z-index: 2;
+      width: 3rem;
+      height: 3rem;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  
+    .navbar-icon span {
+      display: block;
+      width: 2.5rem;
+      height: 0.25rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+      background-color: #fff;
+      border-radius: 3px;
+      transition: all 0.5s ease;
+    }
+  
+    .navbar-icon.active span:first-child {
+      transform: rotate(45deg);
+    }
+  
+    .navbar-icon.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .navbar-icon.active span:last-child {
+      transform: rotate(-45deg);
+    }
+  }

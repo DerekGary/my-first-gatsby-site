@@ -1,33 +1,28 @@
 import * as React from "react"
-import { GatsbyImage } from "gatsby-plugin-image"
-import { graphql, Link } from "gatsby"
-import { heroImage, main, gatsbyImageWrapper } from "./styles/test.module.css"
+import { StaticImage } from "gatsby-plugin-image"
+import { main, container, heroImage, content } from "./styles/test.module.css"
+import Navbar from "../components/navbar"
+import styled from "styled-components"
 
-const TestPage = ({ data }) => {
+const TestPage = () => {
     return (
-        <main className={main}>
-            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} 
-            alt="Super" 
-            style={{ margin: -9 }} />
-            <h1>Test Page Test</h1>
-            <Link to="/">Go Back</Link>
-        </main>
+        <div>
+            <div className={container}>
+                <Navbar />
+                <StaticImage className={heroImage} src="../images/super.png" alt="A Pixel City"
+                    object-fit="none"
+                    layout="fullWidth"
+                />
+            </div>
+            <div className={container}>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae nisl ne to
+                    nunc aliquet lacinia. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+                    Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla
+                    facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+                </p>
+            </div>
+        </div>
     )
 }
 
-export const pageQuery = graphql`
-query MyQuery {
-    file(relativePath: {eq: "super.png"}) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: CONSTRAINED
-          placeholder: BLURRED
-          formats: AUTO
-          breakpoints: [576, 768, 992, 1200, 1440, 1920, 2560]
-          transformOptions: {fit: COVER, cropFocus: CENTER}
-        )
-      }
-    }
-  }
-`
 export default TestPage
