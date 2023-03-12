@@ -1,0 +1,13 @@
+.hero-image {
+    margin-left:0px;
+    padding:0px;
+}
+
+.main {
+    margin: 0;
+    padding:0;
+}
+
+.gatsby-image-wrapper img {
+    margin: 0;
+  }

@@ -44,10 +44,10 @@
 
 5. **Extra Notes to Future Self**
   - Netlify does not play nicely with Gatsby's usage of Node.js v18, so I included a .nvmrc file which states which Node.js version the project is using with this command. 
-  
   ```shell
   node -v > .nvmrc
   ```
+  - 
 
 ## 🚀 Quick start (Netlify)
 

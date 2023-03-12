@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 
 const AboutPage = () => {
@@ -11,9 +10,3 @@ const AboutPage = () => {
 }
 
 export default AboutPage
-export const Head = () => (
-    <>
-        <title>About Me</title>
-        <meta name="description" content="An About Me Page About Derek Gary" />
-    </>
-)
