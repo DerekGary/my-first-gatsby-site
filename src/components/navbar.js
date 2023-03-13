@@ -5,7 +5,6 @@ import './navbar.css';
 const StyledNav = styled.nav`
   display: flex;
   z-index: 10;
-  justify-content: space-between;
   align-items: center;
   font-weight: 400;
   padding: 0;
@@ -112,17 +111,8 @@ const StyledNav = styled.nav`
     .list-item-container:nth-child(3) {
       display: block;
       item-align: center;
-        padding: 0 0 0 65px;
-    }
-    
-    .hamburger {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      cursor: pointer;
-      color: #fff;
-      margin-right: 16px;
+
+        padding: 0 0 0 25px;
     }
   }
 
@@ -130,24 +120,25 @@ const StyledNav = styled.nav`
     padding: 5px;
     color: #62B9F0;
 }
-  
-  
-  
-  
-  
-   
+
+.list {
+    display: flex;
+    margin-right: auto;
+    justify-content: center;
+    padding: 0 0 0 45px;
+}
    
 `;
 
 export default function Navbar() {
     return (
         <StyledNav>
-            <ul>
+            <ul class="list">
                 <div class="list-item-container">
-                    <li><a href="/">WEB DEVELOPMENT</a></li>
+                    <li><a href="#webDev">WEB DEVELOPMENT</a></li>
                 </div>
                 <div class="list-item-container">
-                    <li><a href="/about">WRITING</a></li>
+                    <li><a href="#writing">WRITING</a></li>
                 </div>
                 <div class="list-item-container">
                     <li>
@@ -157,10 +148,10 @@ export default function Navbar() {
                     </li>
                 </div>
                 <div class="list-item-container">
-                    <li><a href="/program">PROGRAMMING</a></li>
+                    <li><a href="#programming">PROGRAMMING</a></li>
                 </div>
                 <div class="list-item-container">
-                    <li><a href="/test">ABOUT ME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
                 </div>
             </ul>
         </StyledNav>
