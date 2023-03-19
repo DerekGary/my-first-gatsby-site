@@ -131,29 +131,29 @@ const StyledNav = styled.nav`
 `;
 
 export default function Navbar() {
-    return (
-        <StyledNav>
-            <ul class="list">
-                <div class="list-item-container">
-                    <li><a href="#webDev">WEB DEVELOPMENT</a></li>
-                </div>
-                <div class="list-item-container">
-                    <li><a href="#writing">WRITING</a></li>
-                </div>
-                <div class="list-item-container">
-                    <li>
-                        <div>Derek Gary</div>
-                        <div>Colorado Springs, CO</div>
-                        <div class="annotation">Annotated Portfolio</div>
-                    </li>
-                </div>
-                <div class="list-item-container">
-                    <li><a href="#programming">PROGRAMMING</a></li>
-                </div>
-                <div class="list-item-container">
-                    <li><a href="#about">ABOUT ME</a></li>
-                </div>
-            </ul>
-        </StyledNav>
-    )
+  return (
+    <StyledNav>
+      <ul className="list">
+        <div className="list-item-container">
+          <li><a href="#webDev">WEB DEVELOPMENT</a></li>
+        </div>
+        <div className="list-item-container">
+          <li><a href="#writing">WRITING</a></li>
+        </div>
+        <div className="list-item-container">
+          <li>
+            <div>Derek Gary</div>
+            <div>Colorado Springs, CO</div>
+            <div className="annotation">Annotated Portfolio</div>
+          </li>
+        </div>
+        <div className="list-item-container">
+          <li><a href="#programming">PROGRAMMING</a></li>
+        </div>
+        <div className="list-item-container">
+          <li><a href="#about">ABOUT ME</a></li>
+        </div>
+      </ul>
+    </StyledNav>
+  )
 }

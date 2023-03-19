@@ -16,6 +16,11 @@ body {
     padding: 0;
 }
 
+.gh-cal-container {
+    background-color: black;
+    z-index: 9;
+}
+
 .gatsby-image-wrapper img {
     margin: 0;
 }
@@ -29,6 +34,26 @@ h3 {
     margin: 0;
     padding: 0;
 }
+
+.hero-button {
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 0;
+    background-color: #62B9F0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #4A8BB4;
+}
+
 
 .container {
     height: 100vh;
@@ -73,45 +98,49 @@ h3 {
     margin: 0;
     padding: 0;
 }
-  @media screen and (max-width: 1280px) and (max-height: 720px) {
+
+@media screen and (max-width: 1280px) and (max-height: 720px) {
     .tag-line {
-      color: #4A8BB4;
-      top: 2%;
+        color: #4A8BB4;
+        top: 2%;
     }
-    .tag-footer{
+
+    .tag-footer {
         margin-top: 10px;
     }
-  }
+}
 
-  @media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
     .tag-line {
         color: #4A8BB4;
         font-size: 18px;
         top: 2%;
-        left:2%;
-      }
-      .tag-footer{
-          margin-top: 10px;
-      }
-  }
+        left: 2%;
+    }
 
-  @media screen and (min-width:3000px){
+    .tag-footer {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:3000px) {
     .tag-line {
         color: #4A8BB4;
         width: 800px;
         font-size: 4.5em;
-        top:  5%;
+        top: 5%;
         left: 15%;
-      }
-      .tag-footer{
-          margin-top: 3%;
-          width: 1000px;
-          font-size: 0.66em;
-          word-spacing: 25%;
-          line-height: 1em;
-      }
-  }
-  
+    }
+
+    .tag-footer {
+        margin-top: 3%;
+        width: 1000px;
+        font-size: 0.66em;
+        word-spacing: 25%;
+        line-height: 1em;
+    }
+}
+
 
 .webDevSection {
     position: absolute;
@@ -120,7 +149,7 @@ h3 {
     width: 100%;
     height: 100%;
     color: #fff;
-    background-color:#1A303F;
+    background-color: #1A303F;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -167,7 +196,7 @@ h3 {
 }
 
 .projectImage {
-    display:inline-block;
+    display: inline-block;
     margin: 1%;
     width: 100%;
     height: 100%;

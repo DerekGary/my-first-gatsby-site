@@ -1,18 +1,29 @@
-import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import { StaticImage } from "gatsby-plugin-image";
+import Navbar from "../components/navbar";
+import Header from "../components/header";
+import Menu from "../components/menu";
 import {
-  main, container, heroImage,
-  content, tagLine, tagFooter,
-  webDevSection, writingSection, programmingSection,
-  aboutSection, projectImage
-} from "./styles/test.module.css"
-import Navbar from "../components/navbar"
-import Menu from "../components/menu"
-import ProjectSection from '../components/section';
-import styled from "styled-components"
-import Arrow from "../components/arrow"
+  container, heroButton, heroImage, tagFooter, tagLine, webDevSection,
+  writingSection, programmingSection, aboutSection, ghCalContainer
+} from "./styles/index.module.css";
+import ProjectSection from "../components/section";
+import styled from "styled-components";
+import Arrow from "../components/arrow";
+import axios from 'axios';
+import 'github-calendar/dist/github-calendar.css';
+import GithubProfileCalendar from "../components/GithubProfileCalendar";
 
 const IndexPage = () => {
+
+  const scrollToAbout = () => {
+    const aboutSection = document.querySelector("#about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div>
       <Menu />
@@ -22,8 +33,23 @@ const IndexPage = () => {
         <div className={tagLine}>
           <h2>Building websites and stories that make an impression.</h2>
           <div className={tagFooter}>
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              backgroundColor: "#f5f5f5",
+              borderRadius: "20px",
+              padding: "20px",
+              marginBottom: "20px"
+            }}>
+              <StaticImage src="../images/me-circle.png" alt="Derek Gary" placeholder="blurred" layout="fixed" width={80} height={80} style={{ borderRadius: "50%", marginRight: "20px" }} />
+              <div>
+                <h3 style={{ margin: "0", fontWeight: "bold" }}>Derek Gary</h3>
+                <p style={{ margin: "0" }}>Software Developer</p>
+              </div>
+            </div>
             <h3>Want to tell your brand's story through compelling web content? Let's talk.</h3>
           </div>
+          <button className={heroButton} onClick={scrollToAbout}>Contact Me</button>
         </div>
         <StaticImage className={heroImage} src="../images/super.png" alt="A Pixel City"
           object-fit="none"
@@ -44,7 +70,7 @@ const IndexPage = () => {
             The process involved researching and gathering information about how to use Figma, creating a wireframe, and designing a prototype ontop of the wireframe.
             Through this process, I overcame challenges in balancing functionality and design while keeping the user in mind. 
             This technology-rich project was created using Figma, a collaborative design tool that allowed for real-time feedback and seamless integration with the website development process."
-            
+
             title2="Personal Website"
             imageSrc2="http://derekgary.com"
             description2="This personal website was created for my Secure Mobile Cloud Computing course.
@@ -67,8 +93,8 @@ const IndexPage = () => {
             This project aimed to show my instructor that I could respond to the rhetorical situation of designing a water safety handout for my local community from the perspective of a technical communicator at a water and sanitation company.
              The technology-rich aspect involved using Adobe InDesign to create a visually appealing and professional-looking handout that effectively communicated important water safety information.
              Challenges included balancing the needs of the audience and the organization while adhering to the conventions of technical communication."
-            
-             title2="Feasibility Report: Emergency Call Boxes"
+
+            title2="Feasibility Report: Emergency Call Boxes"
             imageSrc2="https://drive.google.com/file/d/1AJAIb6txFTXehyPxBM6r1TON2YylhuKX/view?usp=sharing"
             description2="This PDF document was created for my Technical Writing & Presentation course.
             This project aimed to show my instructor that I could respond to the rhetorical situation of
@@ -111,10 +137,27 @@ const IndexPage = () => {
       <div className={container} id="about">
         <div className={aboutSection}>
           <h2>About Me</h2>
-          <p>Work in Progress</p>
+          <div>
+            <p>Name: Derek Gary</p>
+            <p>Major: Computer Science</p>
+            <p>Year: Senior</p>
+            <p>Interests: Web Development, UI/UX Design, Writing, Programming, and Video Games</p>
+            <div style={{ margin: "10px 0 0 0" }}>
+              <h3 style={{ marginBottom: "10px" }}>Contact Me</h3>
+              <div style={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "10px"
+              }}>
+                <a href="https://github.com/DerekGary" target="_blank" rel="noreferrer" style={{ marginBottom: "10px" }}>Github</a>
+                <a href="" target="_blank" rel="noreferrer" style={{ marginBottom: "10px" }}>LinkedIn</a>
+                <a href="" target="_blank" rel="nonreferrer" style={{ marginBottom: "10px" }}>Resume</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 
