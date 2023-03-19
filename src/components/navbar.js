@@ -144,7 +144,7 @@ export default function Navbar() {
           <li>
             <div>Derek Gary</div>
             <div>Colorado Springs, CO</div>
-            <div className="annotation">Annotated Portfolio</div>
+            <div className="annotation">Portfolio</div>
           </li>
         </div>
         <div className="list-item-container">
