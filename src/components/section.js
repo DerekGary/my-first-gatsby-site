@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { projectImage } from './section.module.css';
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby";
 
 const SectionWrapper = styled.div`
   display: grid;
