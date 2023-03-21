@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import React, { useState } from "react"
+import { Link } from "gatsby";
 import './navbar.css';
 
 const StyledNav = styled.nav`
@@ -98,7 +99,7 @@ const StyledNav = styled.nav`
       }      
   }
 
-  @media (max-width: 1155px) {
+  @media (max-width: 1195px) {
     ul {
       flex-direction: column;
       align-items: center;
@@ -154,6 +155,9 @@ export default function Navbar() {
           <li><a href="#about">ABOUT ME</a></li>
         </div>
       </ul>
+      <Link className="resume-link" to="/resume">
+        Resume
+      </Link>
     </StyledNav>
   )
 }

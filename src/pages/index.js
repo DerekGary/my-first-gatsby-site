@@ -2,12 +2,13 @@ import * as React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
+import { navigate } from "gatsby"
 import Navbar from "../components/navbar";
 import Header from "../components/header";
 import Menu from "../components/menu";
 import {
   container, heroButton, heroImage, tagFooter, tagLine, webDevSection,
-  writingSection, programmingSection, aboutSection, ghCalContainer
+  writingSection, programmingSection, aboutSection, heroContainer
 } from "./styles/index.module.css";
 import ProjectSection from "../components/section";
 import styled from "styled-components";
@@ -28,10 +29,9 @@ const IndexPage = () => {
     <div>
       <Menu />
 
-      <div className={container}>
+      <div className={heroContainer}>
         <Navbar />
         <div className={tagLine}>
-          <h2>Building websites and stories that make an impression.</h2>
           <div className={tagFooter}>
             <div style={{
               display: "flex",
@@ -41,15 +41,22 @@ const IndexPage = () => {
               padding: "20px",
               marginBottom: "20px"
             }}>
-              <StaticImage src="../images/me-circle.png" alt="Derek Gary" placeholder="blurred" layout="fixed" width={80} height={80} style={{ borderRadius: "50%", marginRight: "20px" }} />
-              <div>
-                <h3 style={{ margin: "0", fontWeight: "bold" }}>Derek Gary</h3>
-                <p style={{ margin: "0" }}>Software Developer</p>
+              <div style={{ display: "flex", fontFamily: "IBM Plex Sans", width: "100%" }}>
+                <StaticImage src="../images/me-circle.png" alt="Derek Gary" placeholder="blurred" layout="fixed" width={100} height={100} style={{ borderRadius: "50%", marginRight: "20px" }} />
+                <div style={{ width: "80%" }}>
+                  <h3 style={{ margin: "0", fontWeight: "bold" }}>Derek Gary</h3>
+                  <p style={{ margin: "0", borderTop: "1px solid #ccc", paddingTop: "10px" }}>My career goal is to become a Software Developer.
+                    I am passionate about building websites and stories that make an impression, and I want to use my skills in web development, writing, and programming to tell compelling stories through web content.</p>
+                </div>
               </div>
+
             </div>
-            <h3>Want to tell your brand's story through compelling web content? Let's talk.</h3>
+
           </div>
-          <button className={heroButton} onClick={scrollToAbout}>Contact Me</button>
+          <button className={heroButton} onClick={scrollToAbout}>About Me</button>
+          <button className={heroButton} onClick={() => navigate("/resume")}>
+            Resume
+          </button>
         </div>
         <StaticImage className={heroImage} src="../images/super.png" alt="A Pixel City"
           object-fit="none"
@@ -65,20 +72,18 @@ const IndexPage = () => {
           <ProjectSection
             imageSrc1="https://www.figma.com/file/eGpJInUJIAjnQzypCssFc4/TCID-3160-Portfolio?node-id=20%3A621&t=aVSA2hzBIcgMwYNF-1"
             title1="UI/UX Design"
-            description1="This Figma file was designed for a website project in my Technological Adaptability course.
-            The purpose of this project was to create a website design that could assist me in developing an aesthetically pleasing online portfolio. 
-            The process involved researching and gathering information about how to use Figma, creating a wireframe, and designing a prototype ontop of the wireframe.
-            Through this process, I overcame challenges in balancing functionality and design while keeping the user in mind. 
-            This technology-rich project was created using Figma, a collaborative design tool that allowed for real-time feedback and seamless integration with the website development process."
-
+            description1=<ul><li>Designed an aesthetically pleasing online portfolio using Figma for a Technological Adaptability course</li>
+              <li>Developed skills in wireframing, prototyping, and balancing functionality and design with user-centric approach</li>
+              <li>Leveraged Figma's real-time collaboration and seamless integration with website development for effective project execution</li>
+            </ul>
             title2="Personal Website"
             imageSrc2="http://derekgary.com"
-            description2="This personal website was created for my Secure Mobile Cloud Computing course.
-            The purpose of this project was to understand the basics of HTML, CSS, and JavaScript. 
-            The process involved researching best practices for web design and development, creating wireframes and mockups in Figma, and writing and implementing code. 
-            Challenges included debugging code and ensuring responsiveness across different devices. "
-          />
-          <Arrow sectionId="writing" />
+            description2=<ul>
+              <li>Developed a personal website in Secure Mobile Cloud Computing course to learn HTML, CSS, and JavaScript basics</li>
+              <li>Conducted research on web design best practices, created wireframes and mockups in Figma, and implemented code</li>
+              <li>Overcame challenges in debugging code and ensuring responsiveness across various devices</li>
+            </ul>
+          ></ProjectSection>
         </div>
       </div>
 
@@ -104,7 +109,6 @@ const IndexPage = () => {
              feasibility report that effectively communicated important information. Challenges included
              ensuring that the report was clear and concise, and the information used was accurate and relevant."
           />
-          <Arrow sectionId="programming" />
         </div>
       </div>
 
@@ -130,28 +134,40 @@ const IndexPage = () => {
             Studio Code to create the application. Challenges included working through the logic of the game,
             debugging code, and ensuring that the application was accurate in its calculations."
           />
-          <Arrow sectionId="about" />
         </div>
       </div>
 
       <div className={container} id="about">
         <div className={aboutSection}>
           <h2>About Me</h2>
-          <div>
-            <p>Name: Derek Gary</p>
-            <p>Major: Computer Science</p>
-            <p>Year: Senior</p>
-            <p>Interests: Web Development, UI/UX Design, Writing, Programming, and Video Games</p>
-            <div style={{ margin: "10px 0 0 0" }}>
-              <h3 style={{ marginBottom: "10px" }}>Contact Me</h3>
-              <div style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "10px"
-              }}>
-                <a href="https://github.com/DerekGary" target="_blank" rel="noreferrer" style={{ marginBottom: "10px" }}>Github</a>
-                <a href="" target="_blank" rel="noreferrer" style={{ marginBottom: "10px" }}>LinkedIn</a>
-                <a href="" target="_blank" rel="nonreferrer" style={{ marginBottom: "10px" }}>Resume</a>
+          <div style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            backgroundColor: "#f5f5f5",
+            borderRadius: "20px",
+            padding: "20px",
+            marginBottom: "20px"
+          }}>
+            <div style={{ width: "100%", maxWidth: "600px" }}>
+              <h3 style={{ marginBottom: "10px" }}>Biography</h3>
+              <p>I'm Derek Gary, a senior studying Computer Science at University of Colorado, Colorado Springs. I was born and raised in the South, and have always had a passion for technology and creating things. I'm particularly interested in web development, UI/UX design, writing, programming, and video games.</p>
+              <hr style={{ borderTop: "1px solid #ccc", margin: "20px 0" }} />
+              <div style={{ marginBottom: "10px" }}>
+                <h3>Interests</h3>
+                <p>Web Development, UI/UX Design, Writing, Programming, Video Games</p>
+              </div>
+              <div style={{ marginBottom: "10px" }}>
+                <h3>Contact Me</h3>
+                <div style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: "10px"
+                }}>
+                  <a href="https://github.com/DerekGary" target="_blank" rel="noreferrer" style={{ marginBottom: "10px" }}>Github</a>
+                  <a href="" target="_blank" rel="noreferrer" style={{ marginBottom: "10px" }}>LinkedIn</a>
+                  <a href="/resume" target="_blank" rel="noopener noreferrer" style={{ marginBottom: "10px" }}>Resume</a>
+                </div>
               </div>
             </div>
           </div>
