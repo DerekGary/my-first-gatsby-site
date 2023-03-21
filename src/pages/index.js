@@ -94,20 +94,19 @@ const IndexPage = () => {
           <ProjectSection
             title1="Designing Technical Communication"
             imageSrc1="https://drive.google.com/file/d/1-MolYZQTxEUi3z2tSCDgyoqTUtlgWBFA/view?usp=share_link"
-            description1="This PDF document was created for my Advanced Professional and Technical Writing course.
-            This project aimed to show my instructor that I could respond to the rhetorical situation of designing a water safety handout for my local community from the perspective of a technical communicator at a water and sanitation company.
-             The technology-rich aspect involved using Adobe InDesign to create a visually appealing and professional-looking handout that effectively communicated important water safety information.
-             Challenges included balancing the needs of the audience and the organization while adhering to the conventions of technical communication."
+            description1=<ul>
+              <li>Created a visually appealing and professional-looking handout using Adobe InDesign.</li>
+              <li>Successfully responded to the rhetorical situation of designing a water safety handout for the local community from the perspective of a technical communicator at a water and sanitation company.</li>
+              <li>Demonstrated the ability to balance the needs of the audience and the organization while adhering to the conventions of technical communication.</li>
+            </ul>
 
             title2="Feasibility Report: Emergency Call Boxes"
             imageSrc2="https://drive.google.com/file/d/1AJAIb6txFTXehyPxBM6r1TON2YylhuKX/view?usp=sharing"
-            description2="This PDF document was created for my Technical Writing & Presentation course.
-            This project aimed to show my instructor that I could respond to the rhetorical situation of
-             designing a feasibility report detailing wether the installation of emergency call boxes at
-             the University of Colorado Colorado Springs would be a viable solution. The technology-rich
-             aspect involved using Adobe InDesign to create a visually appealing and professional-looking
-             feasibility report that effectively communicated important information. Challenges included
-             ensuring that the report was clear and concise, and the information used was accurate and relevant."
+            description2=<ul>
+              <li>Demonstrated proficiency in technical writing and using Adobe InDesign to create visually appealing and professional-looking reports.</li>
+              <li>Analyzed and evaluated the feasibility of implementing emergency call boxes at the University of Colorado Colorado Springs using technical communication skills.</li>
+              <li>Successfully balanced the needs of the target audience and the organization while adhering to technical communication conventions in a feasibility report project.</li>
+            </ul>
           />
         </div>
       </div>
@@ -119,20 +118,19 @@ const IndexPage = () => {
           <ProjectSection
             title1="C# Wordle Application"
             imageSrc1="https://github.com/DerekGary/Wurdle"
-            description1="This Github repository represents the C# Wordle application that I created for my
-            Advanced Object Oriented Programming Course at the University of Colorado Colorado Springs. The
-            project aimed to show my instructor that I understood how to use Windows Forms and C# to create a
-            functional application. The technology-rich aspect involved using Visual Studio to create a visually
-            appealing and professional-looking application that utilized the MVC design pattern. Challenges
-            included debugging code and ensuring that the application was clear and concise."
-            title2="Linear Domination Game"
+            description1=<ul>
+              <li>Created a C# Wordle application as part of the Advanced Object Oriented Programming course at the University of Colorado Colorado Springs.</li>
+              <li>Demonstrated proficiency in Windows Forms and C# by creating a functional and visually appealing application.</li>
+              <li>Implemented the MVC design pattern and overcame debugging challenges to ensure that the application was clear and concise.</li>
+            </ul>
+
+            title2="Bresenham's Line Generation Algorithm"
             imageSrc2="https://github.com/DerekGary/CS2300-Programming-Assignments/tree/main/Assignment%202"
-            description2="This project represents the Linear Domination Game that I created for my Linear Algebra
-            course at the University of Colorado Colorado Springs. The project aimed to show my instructor that
-            I understood how to use C++ to create a console application which used Bresenham's Line Generation
-            Algorithm to correctly draw lines on the screen. The technology-rich aspect involved using Visual
-            Studio Code to create the application. Challenges included working through the logic of the game,
-            debugging code, and ensuring that the application was accurate in its calculations."
+            description2=<ul>
+              <li>Developed a C++ console application using Bresenham's Line Generation Algorithm to accurately draw lines on the screen for the Linear Domination Game project in Linear Algebra course.</li>
+              <li>Utilized Visual Studio Code for programming and debugging, ensuring the application was accurate in its calculations.</li>
+              <li>Worked through the game logic and debugged code to create a functional and efficient application that demonstrated knowledge of programming concepts and Linear Algebra.</li>
+            </ul>
           />
         </div>
       </div>
