@@ -14,6 +14,13 @@
   background-color: #4A8BB4;
 }
 
+.list-item-container li div:first-child {
+  font-size: 5px;
+  margin-bottom: 8px;
+  color: #fff;
+  line-height: 1;
+}
+
 @media (max-width: 1195px) {
   .navbar-links {
     flex-direction: column;
@@ -88,7 +95,7 @@
 
 .navbar-icon span {
   display: block;
-  width: 2.5rem;
+  width: 1.5rem;
   height: 0.25rem;
   margin-bottom: 0.5rem;
   position: relative;

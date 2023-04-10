@@ -72,18 +72,23 @@ const IndexPage = () => {
           <ProjectSection
             imageSrc1="https://www.figma.com/file/eGpJInUJIAjnQzypCssFc4/TCID-3160-Portfolio?node-id=20%3A621&t=aVSA2hzBIcgMwYNF-1"
             title1="UI/UX Design"
-            description1=<ul><li>Designed an aesthetically pleasing online portfolio using Figma for a Technological Adaptability course</li>
-              <li>Developed skills in wireframing, prototyping, and balancing functionality and design with user-centric approach</li>
-              <li>Leveraged Figma's real-time collaboration and seamless integration with website development for effective project execution</li>
-            </ul>
+            description1={
+              <ul class="project-description-list">
+                <li>Designed an aesthetically pleasing online portfolio using Figma for a Technological Adaptability course</li>
+                <li>Developed skills in wireframing, prototyping, and balancing functionality and design with user-centric approach</li>
+                <li>Leveraged Figma's real-time collaboration and seamless integration with website development for effective project execution</li>
+              </ul>
+            }
             title2="Personal Website"
             imageSrc2="http://derekgary.com"
-            description2=<ul>
-              <li>Developed a personal website in Secure Mobile Cloud Computing course to learn HTML, CSS, and JavaScript basics</li>
-              <li>Conducted research on web design best practices, created wireframes and mockups in Figma, and implemented code</li>
-              <li>Overcame challenges in debugging code and ensuring responsiveness across various devices</li>
-            </ul>
-          ></ProjectSection>
+            description2={
+              <ul class="project-description-list">
+                <li>Developed a personal website in Secure Mobile Cloud Computing course to learn HTML, CSS, and JavaScript basics</li>
+                <li>Conducted research on web design best practices, created wireframes and mockups in Figma, and implemented code</li>
+                <li>Overcame challenges in debugging code and ensuring responsiveness across various devices</li>
+              </ul>
+            }
+          />
         </div>
       </div>
 
@@ -94,19 +99,21 @@ const IndexPage = () => {
           <ProjectSection
             title1="Designing Technical Communication"
             imageSrc1="https://drive.google.com/file/d/1-MolYZQTxEUi3z2tSCDgyoqTUtlgWBFA/view?usp=share_link"
-            description1=<ul>
+            description1={<ul class="project-description-list">
               <li>Created a visually appealing and professional-looking handout using Adobe InDesign.</li>
               <li>Successfully responded to the rhetorical situation of designing a water safety handout for the local community from the perspective of a technical communicator at a water and sanitation company.</li>
               <li>Demonstrated the ability to balance the needs of the audience and the organization while adhering to the conventions of technical communication.</li>
             </ul>
+            }
 
             title2="Feasibility Report: Emergency Call Boxes"
             imageSrc2="https://drive.google.com/file/d/1AJAIb6txFTXehyPxBM6r1TON2YylhuKX/view?usp=sharing"
-            description2=<ul>
+            description2={<ul class="project-description-list">
               <li>Demonstrated proficiency in technical writing and using Adobe InDesign to create visually appealing and professional-looking reports.</li>
               <li>Analyzed and evaluated the feasibility of implementing emergency call boxes at the University of Colorado Colorado Springs using technical communication skills.</li>
               <li>Successfully balanced the needs of the target audience and the organization while adhering to technical communication conventions in a feasibility report project.</li>
             </ul>
+            }
           />
         </div>
       </div>
@@ -118,19 +125,18 @@ const IndexPage = () => {
           <ProjectSection
             title1="C# Wordle Application"
             imageSrc1="https://github.com/DerekGary/Wurdle"
-            description1=<ul>
+            description1={<ul class="project-description-list">
               <li>Created a C# Wordle application as part of the Advanced Object Oriented Programming course at the University of Colorado Colorado Springs.</li>
               <li>Demonstrated proficiency in Windows Forms and C# by creating a functional and visually appealing application.</li>
               <li>Implemented the MVC design pattern and overcame debugging challenges to ensure that the application was clear and concise.</li>
-            </ul>
-
+            </ul>}
             title2="Bresenham's Line Generation Algorithm"
             imageSrc2="https://github.com/DerekGary/CS2300-Programming-Assignments/tree/main/Assignment%202"
-            description2=<ul>
+            description2={<ul class="project-description-list">
               <li>Developed a C++ console application using Bresenham's Line Generation Algorithm to accurately draw lines on the screen for the Linear Domination Game project in Linear Algebra course.</li>
               <li>Utilized Visual Studio Code for programming and debugging, ensuring the application was accurate in its calculations.</li>
               <li>Worked through the game logic and debugged code to create a functional and efficient application that demonstrated knowledge of programming concepts and Linear Algebra.</li>
-            </ul>
+            </ul>}
           />
         </div>
       </div>

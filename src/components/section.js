@@ -47,6 +47,7 @@ const ProjectTitle = styled.h3`
 
 const ProjectDescription = styled.p`
   text-align: left;
+  padding: 10px;
 `;
 
 const ProjectSection = ({ title1, imageSrc1, description1, title2, imageSrc2, description2 }) => {

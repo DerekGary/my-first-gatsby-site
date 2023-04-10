@@ -21,6 +21,10 @@ body {
     z-index: 9;
 }
 
+li {
+    padding-bottom: 15px;
+}
+
 .gatsby-image-wrapper img {
     margin: 0;
 }

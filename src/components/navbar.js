@@ -7,12 +7,9 @@ const StyledNav = styled.nav`
   display: flex;
   z-index: 10;
   align-items: center;
-  font-weight: 400;
   padding: 0;
   background-color: #09121F;
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: 700;
   width: 100%;
   position: fixed;
   top: 0;
@@ -28,7 +25,8 @@ const StyledNav = styled.nav`
   }
 
   .list-item-container {
-    width: 228px; /* set the width of the container */
+    width: 400px; /* set the width of the container */
+    margin-top: 15px;
   }
 
   ul {
@@ -112,12 +110,11 @@ const StyledNav = styled.nav`
     .list-item-container:nth-child(3) {
       display: block;
       item-align: center;
-
-        padding: 0 0 0 25px;
+        padding: 0 0 0 45px;
     }
   }
 
-  .annotation {
+  .annotation { 
     padding: 5px;
     color: #62B9F0;
 }
@@ -126,7 +123,6 @@ const StyledNav = styled.nav`
     display: flex;
     margin-right: auto;
     justify-content: center;
-    padding: 0 0 0 45px;
 }
    
 `;
