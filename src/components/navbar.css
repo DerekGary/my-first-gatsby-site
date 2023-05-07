@@ -2,7 +2,7 @@
   position: absolute;
   right: 2rem;
   text-decoration: none;
-  color: #62B9F0;
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px;
@@ -21,7 +21,7 @@
   line-height: 1;
 }
 
-@media (max-width: 1195px) {
+@media (max-width: 1156px) {
   .navbar-links {
     flex-direction: column;
     align-items: flex-start;
@@ -40,7 +40,7 @@
     font-weight: 700;
     padding: 0 0 0 2rem;
     background-color: transparent;
-    color: #62B9F0;
+    color: #fff;
     border-radius: 0;
   }
 

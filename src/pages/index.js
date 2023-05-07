@@ -98,7 +98,7 @@ const IndexPage = () => {
           <p></p>
           <ProjectSection
             title1="Designing Technical Communication"
-            imageSrc1="https://drive.google.com/file/d/1-MolYZQTxEUi3z2tSCDgyoqTUtlgWBFA/view?usp=share_link"
+            imageSrc1="https://drive.google.com/file/d/1-MolYZQTxEUi3z2tSCDgyoqTUtlgWBFA/view?usp=sharing"
             description1={<ul class="project-description-list">
               <li>Created a visually appealing and professional-looking handout using Adobe InDesign.</li>
               <li>Successfully responded to the rhetorical situation of designing a water safety handout for the local community from the perspective of a technical communicator at a water and sanitation company.</li>
@@ -130,12 +130,13 @@ const IndexPage = () => {
               <li>Demonstrated proficiency in Windows Forms and C# by creating a functional and visually appealing application.</li>
               <li>Implemented the MVC design pattern and overcame debugging challenges to ensure that the application was clear and concise.</li>
             </ul>}
-            title2="Bresenham's Line Generation Algorithm"
-            imageSrc2="https://github.com/DerekGary/CS2300-Programming-Assignments/tree/main/Assignment%202"
+            title2="Ruby on Rails Web Application"
+            imageSrc2="https://github.com/DerekGary/cs3300project2022"
             description2={<ul class="project-description-list">
-              <li>Developed a C++ console application using Bresenham's Line Generation Algorithm to accurately draw lines on the screen for the Linear Domination Game project in Linear Algebra course.</li>
-              <li>Utilized Visual Studio Code for programming and debugging, ensuring the application was accurate in its calculations.</li>
-              <li>Worked through the game logic and debugged code to create a functional and efficient application that demonstrated knowledge of programming concepts and Linear Algebra.</li>
+              <li>Developed a Ruby on Rails web application using the Ruby programming language, noSQL database, and devise gem for user authentication.</li>
+              <li>Utilized a Docker environment and Visual Studio code for development.</li>
+              <li>Demonstrated knowledge of programming concepts and the software development lifecycle through the completion of this assignment in sprints.</li>
+              <li>These sprints can be viewed through viewing the "commits" section present on the Github page.</li>
             </ul>}
           />
         </div>
@@ -155,7 +156,11 @@ const IndexPage = () => {
           }}>
             <div style={{ width: "100%", maxWidth: "600px" }}>
               <h3 style={{ marginBottom: "10px" }}>Biography</h3>
-              <p>I'm Derek Gary, a senior studying Computer Science at University of Colorado, Colorado Springs. I was born and raised in the South, and have always had a passion for technology and creating things. I'm particularly interested in web development, UI/UX design, writing, programming, and video games.</p>
+              <p>I'm Derek Gary, a senior studying Computer Science at the University of Colorado, Colorado Springs. Growing up in the South, I developed a strong connection to my community and a curiosity about the world.
+
+                My passion for technology led me to explore web development and UI/UX design, combining my technical skills with an eye for aesthetics. I enjoy expressing myself through writing and programming, which allows me to shape technology for our evolving world.
+
+                In my free time, I play video games, which inspire my work in computer science and remind me of technology's potential. As I refine my skills, I look forward to contributing to the tech industry and making a lasting impact.</p>
               <hr style={{ borderTop: "1px solid #ccc", margin: "20px 0" }} />
               <div style={{ marginBottom: "10px" }}>
                 <h3>Interests</h3>
